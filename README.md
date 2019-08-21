@@ -1,2 +1,3 @@
-# ThiagoWaishaupt.github.io
-Meu site pessoal
+# Thiago Waishaupt
+https://thiagowaishaupt.github.io
+- GitHub Pages
