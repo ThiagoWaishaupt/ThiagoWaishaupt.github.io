@@ -1,27 +1,32 @@
-.red-text {
-    color: rgb(255, 0, 179);
-  }
+p {
+    font-size: 23px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
 
-  h2 {
-    font-family: 'Indie Flower', cursive;
-  }
-
-  p {
-    font-size: 16px;
-    font-family: monospace;
-  }
-
-  .thick-green-border {
-    border-color: green;
-    border-width: 10px;
+.border {
+    border-color: rgb(66, 66, 66);
+    border-width: 5px;
     border-style: solid;
     border-radius: 50%;
-  }
+}
 
-  .smaller-image {
+.smaller-image {
     width: 100px;
-  }
+}
 
-  .silver-background {
-    background-color: silver;
-  }
+.navbar {
+    overflow: hidden;
+    background-color: rgb(85, 85, 85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ajuste-titulo {
+    margin: 10px;
+}
