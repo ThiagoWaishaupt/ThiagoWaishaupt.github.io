@@ -3,30 +3,38 @@ p {
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+body {
+    background-color: rgb(48, 48, 48);
+}
+
+nav {
+    display: table;
+}
+
 .border {
-    border-color: rgb(66, 66, 66);
+    border-color: rgb(54, 54, 54);
     border-width: 5px;
     border-style: solid;
     border-radius: 50%;
 }
 
 .smaller-image {
-    width: 100px;
+    width: 150px;
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: rgb(85, 85, 85);
+    background-color: #292929;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-family: 'Raleway', sans-serif;
 }
 
 .ajuste-titulo {
-    margin: 10px;
+    margin-left: 70px;
+    margin-top: 10px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
 }
