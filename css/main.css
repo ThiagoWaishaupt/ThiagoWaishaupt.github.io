@@ -10,7 +10,7 @@
 }
 
 body {
-    background: #f1e4f3;
+    background: #353434;
     font-family: "Poppins", sans-serif;
     font-size: 1em;
     margin: 0;
@@ -20,15 +20,15 @@ body {
 }
 
 .card {
-    height: 100%;
+    height: 80%;
     position: relative;
     width: 100%;
 }
 
 .details {
-    background: #f1e4f3;
+    background: #413f3f;
     box-shadow: 0em 0em 2em rgba(0, 0, 0, 0.1);
-    color: #43278c;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     left: 50%;
@@ -54,9 +54,10 @@ body {
 }
 
 .entry-header h2 {
-    background: #43278c;
+    background: #5633b1;
     box-decoration-break: clone;
-    box-shadow: 0.2em 0 0 #43278c, -0.2em 0 0 #43278c;
+    box-shadow: 0.7em 0 0 #5633b1, -0.2em 0 0 #ffffff;
+    border-radius: 3px;
     color: #fff;
     display: inline;
     margin: 0 0.2em;
@@ -78,15 +79,16 @@ body {
 }
 
 button {
-    background: #f1e4f3;
-    border: 2px solid #43278c;
+    background: #fff;
+    border: 3px solid #5633b1;
+    border-radius: 5px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    color: #43278c;
+    color: #5633b1;
     cursor: pointer;
     display: inline-block;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.10rem;
     padding: 0.4rem 1.4rem;
     position: relative;
     text-transform: uppercase;
@@ -104,7 +106,7 @@ button:before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #ff599b;
+    background: #5633b1;
     transform: scaleX(0);
     transform-origin: 0 50%;
     transition-duration: 0.2s;
@@ -143,7 +145,7 @@ button:active:before {
 
 .picture {
     height: 9em;
-    left: 51%;
+    left: 52%;
     overflow: hidden;
     position: absolute;
     top: 51%;
@@ -152,7 +154,7 @@ button:active:before {
 }
 
 .card svg {
-    background: #fe7c73;
+    background: #4b494900;
     fill: #333745;
     height: 24em;
     left: -3em;
@@ -165,7 +167,7 @@ button:active:before {
 .card,
 .card svg,
 .card .picture {
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 
 .preview svg,
@@ -218,6 +220,7 @@ div.expanded {
 }
 
 .expanded .details {
+    /*menu*/
     animation: slide 0.8s ease-out;
     animation-fill-mode: forwards;
     height: 100%;
@@ -226,7 +229,7 @@ div.expanded {
     opacity: 0;
     position: absolute;
     top: 0;
-    width: 40%;
+    width: 50%;
     z-index: 10;
 }
 
@@ -270,6 +273,105 @@ div.expanded {
     animation-delay: 1.2s;
 }
 
+.btn {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: -5px 5px 15px -5px #f1f1f1;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s linear;
+}
+
+.btn i {
+    line-height: 60px;
+    font-size: 26px;
+    transition: 0.3s linear;
+}
+
+.btn:nth-child(1) i {
+    color: #3b5998;
+}
+
+.btn:nth-child(2) i {
+    color: #c32aa3;
+}
+
+.btn:nth-child(3) i {
+    color: #0072b1;
+}
+
+.btn:nth-child(4) i {
+    color: #2e2e2e;
+}
+
+.btn:nth-child(5) i {
+    color: #0078d7;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn:hover i {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn:nth-child(1)::before {
+    background: #3b5998;
+}
+
+.btn:nth-child(2)::before {
+    background: #c32aa3;
+}
+
+.btn:nth-child(3)::before {
+    background: #0072b1;
+}
+
+.btn:nth-child(4)::before {
+    background: #2e2e2e;
+}
+
+.btn:nth-child(5)::before {
+    background: #0078d7;
+}
+
+.btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        left: -10%;
+        top: -10%;
+    }
+}
+
 @keyframes fade {
     0% {
         opacity: 0;
@@ -291,4 +393,8 @@ div.expanded {
         opacity: 1;
         transform: translateX(0%);
     }
+}
+
+.alinhamento {
+    margin-left: 30%;
 }
