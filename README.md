@@ -8,8 +8,8 @@ Sou programador back-end, mas tenho me aventurado pelo mundo de front para ir al
 
 ## Lista de Estudos
 
-[x] Front
-[x] Inglês
-[ ] TDD
-[ ] Spring
-[ ] Cloud
+- [x] Front
+- [x] Inglês
+- [ ] TDD
+- [ ] Spring
+- [ ] Cloud
